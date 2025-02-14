@@ -19,8 +19,11 @@ namespace SplinterCellCTCOOPSaver
         [DllImport("user32.dll")]
         public static extern short GetAsyncKeyState(int vKey);
 
+        private SplinterCellCoopManager manager;
+
         public Form1()
         {
+            this.manager = new SplinterCellCoopManager();
             InitializeComponent();
         }
 
